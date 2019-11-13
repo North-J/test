@@ -1,0 +1,60 @@
+DOS头
+WORD	e_magic		5A4D		
+WORD	e_cblp		0090
+WORD	e_cp		0003
+WORD	e_crlc		0000
+WORD	e_cparhdr	0004
+WORD	e_minalloc	0000
+WORD	e_maxalloc	FFFF
+WORD	e_ss		0000
+WORD	e_sp		00B8
+WORD	e_csum		0000
+WORD	e_ip		0000
+WORD	e_cs		0000
+WORD	e_lfarlc	0040
+WORD	e_ovno		0000
+WORD	e_res[4]	0000 0000 0000 0000
+WORD	e_oemid		0000
+WORD	e_oeminfo	0000
+WORD	e_res2[10]	0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+DWORD   e_lfanew	0000 00FO
+
+
+标准PE头
+WORD	Machine			4550
+WORD	NumberOfSecitons	0000		
+DWORD  	TimeDateStamp		0006 014C	
+DWORD  	PointerToSymbolTalble	2FA4 2C17
+DWORD   NumberOfSymbols		0000 0000
+WORD	SizeOfOptionalHeader	0000	
+WORD	Charateristics		0000
+
+
+可选PE头
+WORD	Machine			00E0
+BYTE	MajorLinkerVersion	02
+BYTE	MinorLinkerVersion	01
+DWORD	SizeOfCode		0F0E 010B	
+DWORD	SizeOfInitializedData	0001 FC00	
+DWORD	SizeOfUninitializedData	0000 7400	
+DWORD	AddressOfEntryPoint	0000 0000	
+DWORD	BaseOfCode		0001 F8B0	
+DWORD	BaseOfData		0000 1000	
+DWORD	ImageBase		0002 1000	
+DWORD	ScetionAlignment	0040 0000	
+DWORD	FileAlignment		0000 1000
+WORD	MajorOperatingSystemVersion	0200
+WORD	MinorOperatingSystemVersion	0000
+WORD	MajorImageVersion	000A
+WORD	MinorImageVersion	0000
+DWORD	Win32VersionValue	0000 000A
+DWORD	SizeOfImage		0000 000A
+DWORD	SizeOfHeaders		0000 0000
+DWORD	CheckSum		0002 B000
+WORD	Subsystem		0000
+WORD	DllCharacteristics	0004
+DWORD	SizeOfStackReserve	C540 0000	
+DWORD	SizeOfStackCommit	0002 0002	
+DWORD	SizeOfHeapReserve	0000 C140
+DWORD	LoaderFlags		1000 0004
+DWORD	NumberOfRvaAndSizes	0000 0001	
